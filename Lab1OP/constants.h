@@ -1,0 +1,7 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+#define SIZE_ARRAY_SYMBOL 128
+#define DEFAULT_FIELD ""
+
+#endif // CONSTANTS_H
