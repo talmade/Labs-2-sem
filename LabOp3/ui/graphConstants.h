@@ -1,0 +1,69 @@
+#ifndef GRAPHCONSTANTS_H
+#define GRAPHCONSTANTS_H
+
+#include <QColor>
+
+#define COLOR_RED QColor(200, 0, 0)
+#define COLOR_GREEN QColor(0, 130, 0)
+#define COLOR_BLUE QColor(0, 0, 200)
+#define COLOR_WHITE QColor(200, 200, 200)
+#define COLOR_BLACK QColor(30, 30, 30)
+#define COLOR_GREY QColor(100, 100, 100)
+
+#define YEARS_COUNT 28
+#define AXIS_DIVISIONS 10
+#define AXIS_PADDING 0.1
+
+#define POINT_RADIUS 7
+#define RECT_WIDTH 15
+#define RECT_HEIGHT 5
+#define PEN_WIDTH_NORMAL 2
+#define PEN_WIDTH_THICK 3
+#define TWO 2
+#define ONE 1
+
+typedef enum {
+    HIGH_OFFSET = 100,
+    DOWN_OFFSET = 100,
+    LEFT_OFFSET = 50,
+    RIGHT_OFFSET = 30
+} WindowMargins;
+
+typedef enum {
+    DATA_AREA_HIGH_OFFSET = 30,
+    ARROW_LEN = 10,
+    ARROW_HALF_SPAN = 20,
+    TICK_LEN = 5,
+    TICK_TEXT_OFFSET_X = 45,
+    TICK_TEXT_OFFSET_Y = 5,
+    YEAR_TICK_OFFSET = 10,
+    AXIS_OY_LABEL_OFFSET = 20,
+    AXIS_OX_LABEL_OFFSET = 10,
+    TITLE_OFFSET_Y = 50
+} Offsets;
+
+typedef enum {
+    RECT_OFFSET_X = 30,
+    RECT_OFFSET_Y_MAX = 80,
+    RECT_OFFSET_Y_MEDIAN = 60,
+    RECT_OFFSET_Y_MIN = 40,
+    TEXT_OFFSET_X_MAX = 61,
+    TEXT_OFFSET_X_MEDIAN = 80,
+    TEXT_OFFSET_X_MIN = 59,
+    TEXT_OFFSET_Y_MAX = 75,
+    TEXT_OFFSET_Y_MEDIAN = 55,
+    TEXT_OFFSET_Y_MIN = 35,
+    DESCRIPTION_OFFSET_X = 220,
+    DESCRIPTION_OFFSET_Y = 75,
+    DESCRIPTION_OFFSET_Y_SECOND = 55
+} DesignationOffsets;
+
+typedef enum {
+    FONT_SIZE_TITLE = 32,
+    FONT_SIZE_AXIS = 12,
+    FONT_SIZE_LABEL = 10,
+    FONT_SIZE_YEAR = 8,
+    FONT_SIZE_XY = 16
+} FontSizes;
+
+#endif // GRAPHCONSTANTS_H
